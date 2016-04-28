@@ -10,7 +10,7 @@
         android:layout_height="match_parent"
         android:text="@string/hello_blank_fragment" />
 
-
+//https://github.com/inhwanYang/myProj.git
     <RelativeLayout
         android:id="@+id/GraphView"
         android:layout_width="match_parent"
