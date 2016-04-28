@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffffff"
+        android:orientation="vertical">
+
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/sw_status"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <TextView
+                android:id="@+id/bar_text"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_marginLeft="20dip"
+                android:gravity="center"
+                android:text="HOME"
+                android:textColor="#ffffffff"
+                android:textSize="20dp" />
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffffff"
+            tools:context=".MainActivity">
+
+            <FrameLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/fl_activity_main_container">
+
+                <TextView
+                    android:id="@+id/my_id"
+                    android:layout_width="1dip"
+                    android:layout_height="1dip"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="250dip"
+                    android:layout_height="180dip"
+                    android:id="@+id/my_info_text"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dip"
+                    android:visibility="invisible"
+                    android:textSize="15dip"
+                    android:textColor="#FFFFFFFF"
+                    android:background="@drawable/textbox1"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" />
+
+            </FrameLayout>
+
+            <ListView android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:id="@+id/lv_activity_main_nav_list"
+                android:layout_gravity="start"
+                android:choiceMode="singleChoice"
+                android:divider="@android:color/white"
+                android:dividerHeight="0dp"
+                android:background="#EDEDED">
+            </ListView>
+
+        </android.support.v4.widget.DrawerLayout>
+    </LinearLayout>
+
+</RelativeLayout>

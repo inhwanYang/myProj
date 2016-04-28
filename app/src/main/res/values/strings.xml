@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Saving Water</string>
+    <string name="app_name2"></string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">설정</string>
+    <string name="show_info">내 정보</string>
+    <string name="Logout">로그아웃</string>
+    <string name="Register_device">내 정보 수정 및 장치 등록</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_map">Map</string>
+    <string name="DATABASE">INFO_DB2.db</string>
+    <string name="title_activity_join">JoinActivity</string>
+
+</resources>
